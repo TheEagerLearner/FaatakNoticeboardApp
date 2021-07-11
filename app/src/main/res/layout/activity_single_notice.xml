@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleNotice">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:translationZ="0.1dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="0dp"
+            android:minHeight="?attr/actionBarSize"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:padding="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice"
+                android:textColor="#0F9EFF"
+                android:layout_toRightOf="@id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="26sp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#3C3C3C"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/txtTitle"
+        android:text="10/03/2021 2:45 PM"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/txtGreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDateTime"
+        android:layout_marginTop="20dp"
+        android:text="Dear Member,"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#535353"
+        />
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGreet"
+        android:layout_marginTop="30dp"
+        android:text="@string/dummy"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#535353"
+        />
+    <TextView
+        android:id="@+id/txtlast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your's Sincerely"
+        android:textColor="#535353"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/txtMessage"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3C3C3C"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textEnd"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@id/txtlast"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Saurabh Mulgaonkar"
+        />
+
+</RelativeLayout>
+</ScrollView>
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressTint="#0099FF"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

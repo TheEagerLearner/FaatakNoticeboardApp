@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Faatak_AndroidApp_SaurabhMulgaonkar"

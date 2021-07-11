@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/NoticeCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp"
+
+        android:background="@drawable/shape"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:inputType="textCapSentences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rosario"
+            android:padding="2dp"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtEventType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/txtTitle"
+            android:paddingVertical="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="5dp"
+            android:textSize="12sp"
+            android:text="Event"
+            android:textColor="#F53947"
+            android:layout_marginTop="4dp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/txtDate"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="SenderName"
+            android:layout_below="@id/txtTitle"
+            android:textColor="#0F9EFF"
+            />
+        <TextView
+            android:id="@+id/txtDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginTop="4dp"
+            android:text="&#9679;"
+            android:layout_below="@id/txtTitle"
+            android:layout_toRightOf="@id/txtSender"
+            android:textColor="#C4C4C4"
+            />
+        <TextView
+            android:id="@+id/txtsenderType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="SenderType"
+            android:layout_below="@id/txtTitle"
+            android:layout_toRightOf="@id/txtDot"
+            android:textColor="#0F9EFF"
+            />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtDot"
+            android:layout_marginTop="16dp"
+            android:padding="2dp"
+            android:text="@string/dummy"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginBottom="0dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
